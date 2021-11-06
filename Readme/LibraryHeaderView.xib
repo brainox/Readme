@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LibraryViewController" customModule="Readme" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LibraryHeaderView" customModule="Readme" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookTexture" translatesAutoresizingMaskIntoConstraints="NO" id="9jH-dP-Hr0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weg-Ic-cLK">
+                    <rect key="frame" x="135" y="15.5" width="144" height="29"/>
+                    <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="weg-Ic-cLK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1dU-FL-Ync"/>
+                <constraint firstItem="weg-Ic-cLK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FFE-so-zjV"/>
+                <constraint firstItem="weg-Ic-cLK" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.347826" id="QPE-MX-HKu"/>
+                <constraint firstItem="9jH-dP-Hr0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bpI-le-b6D"/>
+                <constraint firstItem="9jH-dP-Hr0" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="god-IQ-MWV"/>
+                <constraint firstItem="9jH-dP-Hr0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="krd-Pt-deH"/>
+                <constraint firstItem="9jH-dP-Hr0" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="uLK-XS-Jfx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="weg-Ic-cLK" id="e8O-1j-fsB"/>
+            </connections>
+            <point key="canvasLocation" x="60.869565217391312" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BookTexture" width="1000" height="196"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

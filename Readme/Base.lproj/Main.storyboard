@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -51,6 +50,9 @@
                                         <constraint firstItem="5Hw-xo-jPw" firstAttribute="height" secondItem="GLy-Xj-gp6" secondAttribute="height" id="VoJ-HY-iIK"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="24i-Cg-7TW" kind="show" id="8Ry-VZ-ZZX"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" id="iaH-WY-YDs" customClass="BookCell" customModule="Readme" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="124.5" width="414" height="100"/>
@@ -315,7 +317,10 @@
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xvN-XW-LLI">
                                                             <rect key="frame" x="84" y="0.0" width="290" height="34"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="24i-Cg-7TW" id="na1-RU-TiQ"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -347,7 +352,10 @@
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Author..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="74C-bj-sux">
                                                             <rect key="frame" x="84" y="0.0" width="290" height="34"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="24i-Cg-7TW" id="wGg-WZ-j3m"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                 </stackView>
@@ -422,36 +430,6 @@
             </objects>
             <point key="canvasLocation" x="2777" y="-288"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="CMt-Pm-dJF">
-            <objects>
-                <viewController id="owq-dG-GBY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fST-xP-6tU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86Q-6Q-1jM">
-                                <rect key="frame" x="136" y="216" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0pq-nN-aXC">
-                                <rect key="frame" x="194" y="431" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="c8Z-gG-P62"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VtK-NG-g8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3746" y="-296"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="mk0-R1-RC7">
             <objects>
@@ -471,10 +449,14 @@
             <point key="canvasLocation" x="895.6521739130435" y="66.964285714285708"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="ReadMe Tint Color"/>
     <resources>
         <image name="book.circle" catalog="system" width="128" height="121"/>
         <image name="bookmark.fill" catalog="system" width="112" height="128"/>
         <image name="t.square" catalog="system" width="128" height="114"/>
+        <namedColor name="ReadMe Tint Color">
+            <color red="1" green="0.62400001287460327" blue="0.038999993354082108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

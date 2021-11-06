@@ -16,7 +16,8 @@
 		B4233B1D2731834500DD4BB3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4233B1C2731834400DD4BB3 /* Book.swift */; };
 		B4233B1F27318FDD00DD4BB3 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4233B1E27318FDD00DD4BB3 /* Library.swift */; };
 		B49EA46327356F6B00E31466 /* NewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49EA46227356F6B00E31466 /* NewBookViewController.swift */; };
-		B49EA46527359E5E00E31466 /* NewBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49EA46427359E5E00E31466 /* NewBooksViewController.swift */; };
+		B49EA4672736D36200E31466 /* LibraryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49EA4662736D36200E31466 /* LibraryHeaderView.swift */; };
+		B49EA4692736D42D00E31466 /* LibraryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B49EA4682736D42D00E31466 /* LibraryHeaderView.xib */; };
 		B4FD5EA42733DD580035C9B4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD5EA32733DD580035C9B4 /* DetailViewController.swift */; };
 		B4FD5EA6273415FC0035C9B4 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FD5EA5273415FC0035C9B4 /* BookCell.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +34,8 @@
 		B4233B1C2731834400DD4BB3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		B4233B1E27318FDD00DD4BB3 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		B49EA46227356F6B00E31466 /* NewBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookViewController.swift; sourceTree = "<group>"; };
-		B49EA46427359E5E00E31466 /* NewBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBooksViewController.swift; sourceTree = "<group>"; };
+		B49EA4662736D36200E31466 /* LibraryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryHeaderView.swift; sourceTree = "<group>"; };
+		B49EA4682736D42D00E31466 /* LibraryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryHeaderView.xib; sourceTree = "<group>"; };
 		B4FD5EA32733DD580035C9B4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B4FD5EA5273415FC0035C9B4 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,9 +73,10 @@
 				B4233B0827317F0C00DD4BB3 /* AppDelegate.swift */,
 				B4233B0A27317F0C00DD4BB3 /* SceneDelegate.swift */,
 				B4233B0C27317F0C00DD4BB3 /* LibraryViewController.swift */,
+				B49EA4662736D36200E31466 /* LibraryHeaderView.swift */,
+				B49EA4682736D42D00E31466 /* LibraryHeaderView.xib */,
 				B4FD5EA5273415FC0035C9B4 /* BookCell.swift */,
 				B4233B0E27317F0C00DD4BB3 /* Main.storyboard */,
-				B49EA46427359E5E00E31466 /* NewBooksViewController.swift */,
 				B4233B1C2731834400DD4BB3 /* Book.swift */,
 				B4233B1E27318FDD00DD4BB3 /* Library.swift */,
 				B4FD5EA32733DD580035C9B4 /* DetailViewController.swift */,
@@ -145,6 +148,7 @@
 				B4233B1527317F0E00DD4BB3 /* LaunchScreen.storyboard in Resources */,
 				B4233B1227317F0E00DD4BB3 /* Assets.xcassets in Resources */,
 				B4233B1027317F0C00DD4BB3 /* Main.storyboard in Resources */,
+				B49EA4692736D42D00E31466 /* LibraryHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,9 +163,9 @@
 				B4233B0D27317F0C00DD4BB3 /* LibraryViewController.swift in Sources */,
 				B49EA46327356F6B00E31466 /* NewBookViewController.swift in Sources */,
 				B4233B1F27318FDD00DD4BB3 /* Library.swift in Sources */,
-				B49EA46527359E5E00E31466 /* NewBooksViewController.swift in Sources */,
 				B4FD5EA6273415FC0035C9B4 /* BookCell.swift in Sources */,
 				B4FD5EA42733DD580035C9B4 /* DetailViewController.swift in Sources */,
+				B49EA4672736D36200E31466 /* LibraryHeaderView.swift in Sources */,
 				B4233B0927317F0C00DD4BB3 /* AppDelegate.swift in Sources */,
 				B4233B0B27317F0C00DD4BB3 /* SceneDelegate.swift in Sources */,
 			);

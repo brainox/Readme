@@ -38,5 +38,12 @@ extension NewBookViewController: UIImagePickerControllerDelegate, UINavigationCo
 }
 
 extension NewBookViewController: UITextFieldDelegate {
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == titleTextField {
+            authorTextField.becomeFirstResponder()
+        } else {
+            return textField.resignFirstResponder()
+        }
+        return true
+    }
 }
